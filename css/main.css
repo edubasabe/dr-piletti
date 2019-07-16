@@ -1,0 +1,775 @@
+/*!
+ * Design & Development by Edu Basabe
+ * http://www.edubasabe.com
+ *
+ */
+
+body {
+
+  /*  padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+.navbar-fixed-top .nav {padding: 15px 0;}
+.navbar-fixed-top .navbar-brand {padding: 0 15px;}
+
+ /* Responsive */
+@media(min-width:768px) {
+    .navbar-fixed-top .navbar-brand {padding: 15px 0;}
+}
+
+/* Fuentes */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Montserrat',Helvetica, Arial, sans-serif;
+}
+p, a, li {
+  	font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/* Header */
+.black {
+	background: #000;
+	min-height: 5rem;
+}
+
+.black a {
+	color: #fff;
+	line-height: 5rem;
+	font-size: 2rem;
+	font-family: 'Fira Sans';
+	font-weight: bold;
+	font-variant: small-caps;
+	text-decoration:none;
+}
+.menu {
+	font-family: 'Fira Sans';
+	font-weight: 500;
+	padding-top: 6rem;
+}
+.menu li.separador {
+	padding: 1.5rem 0;
+	margin:0 1.5rem;
+}
+
+.margin-0 {
+  margin: 0!important;
+}
+.padding-0 {
+  padding: 0!important;
+}
+
+@media(max-width:768px) {
+  .menu {
+    float: none!important;
+    padding:0  2rem;
+    font-size: 1.6rem;
+
+  }
+  .menu li.separador {display: none;}
+  .navbar-brand img {max-height: 4rem;}
+  .navbar-toggle {margin: 1.8rem 1.8rem auto auto;}
+  .menu li {border-bottom: 1px solid #ccc;}
+  .menu li:last-child {border:transparent;}
+}
+
+ul.dropdown-menu li a {
+  font-size: 1.6rem;
+}
+
+
+
+/* Main */
+/*.main {margin-top: 1.83rem;}*/
+
+/* Footer */
+.footer {
+	background-color: #363636;
+	color: #fff;
+	font-family: 'Fira Sans';
+	font-weight: 300;
+	padding: 2rem 0;
+}
+.one-footer {
+	display: block;
+	margin:0 auto;
+}
+.logo-footer {
+	border-bottom: 3px solid #fff;
+    padding-bottom: .6rem;
+    margin-bottom: 1rem;
+}
+.connect a {color: #fff;}
+.connect h4 {
+	font-family: 'Fira Sans';
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+.menu-list{
+	padding-left: 0;
+}
+.menu-list li {
+	list-style-type: none;
+}
+.menu-list li a {
+	color: #fff;
+	text-decoration:none;
+
+}
+.menu-list li:before{
+	content: "-";
+	padding-right: .5rem;
+}
+
+
+.contacto-footer {
+	color: #fff;
+	text-align: right;
+}
+@media(max-width:768px) {
+	.one-footer {
+		margin: 3rem 0;
+		text-align: center;
+	}
+	.logo-footer {margin: 1rem  auto;}
+
+	.connect {
+		margin:3rem 0;
+	}
+	.contacto-footer {
+		margin: 3rem 0;
+		text-align: center;
+	}
+}
+
+
+/* Procedures */
+.procedures {
+	padding: 5rem 0;
+}
+.procedures a {
+	text-decoration: none;
+}
+.procedures h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+}
+.procedure-img {
+	min-height: 12rem;
+	width: 100%;
+	display: block;
+	margin-bottom: 2rem;
+	background-color: rgba(59, 89, 152, 0.6);
+	background-blend-mode: soft-light;
+	background-position: center;
+	transition: background-color .6s;
+	-webkit-transition: background-color .6s;
+	   -moz-transition: background-color .6s;
+}
+.procedure-img:hover {
+	background-color: rgba(179, 21, 0, 0);
+}
+.rhinoplasty {
+	background-image: url(../img/procedures/rhinoplasty.jpg);
+	background-size: cover;
+}
+.tummy-tuck {
+	background-image: url(../img/procedures/tummy-tuck.jpg);
+	background-size: cover;
+}
+.hair-restoration{
+	background-image: url(../img/procedures/hair-restoration.jpg);
+	background-size: cover;
+}
+.breast-surgery{
+	background-image: url(../img/procedures/breast-surgery.jpg);
+	background-size: cover;
+}
+.face-lift{
+	background-image: url(../img/procedures/face-lift.jpg);
+	background-size: cover;
+}
+.facial-reconstruction{
+	background-image: url(../img/procedures/facial-reconstruction.jpg);
+	background-size: cover;
+}
+.procedure-img h4 {
+	color: #fff;
+	font-size: 2.8rem;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 12rem;
+	margin: 0;
+}
+/* Bio */
+.bio {
+	padding: 5rem 0;
+	background-color: #202020;
+	color: #fff;
+}
+.bio h2 {
+	font-size: 3.7rem;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 6rem;
+}
+.bio p {
+	font-size: 1.8rem;
+	font-family: 'Fira Sans';
+}
+
+/* Latest News */
+
+.latest-news {
+	padding: 5rem 0;
+  background-color: #e8e0df;
+}
+.latest-news h2 {
+  font-size: 4rem;
+  margin-bottom:4rem;
+}
+.latest-news .thumbnail {
+  background-color:transparent;
+  border: 0;
+}
+.latest-news .thumbnail .mask {
+    position: relative;
+    /*border: 1px solid #000;*/
+    overflow: hidden;
+    min-height: 200px;
+}
+.latest-news .thumbnail .mask img {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+.latest-news .thumbnail .caption h3 {
+  font-size: 1.6rem;
+}
+
+.latest-news .thumbnail .caption p {
+  font-weight: 300;
+}
+
+.btn-readmore {
+  text-align: right;
+}
+
+.btn-readmore a {
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+
+/* Hero Index */
+
+.hero-index {
+  background-image: url(../img/hero/Hero-Image.jpg);
+  background-size: cover;
+}
+
+.box-slide {
+  padding: 1rem;
+  background-color:rgba(255, 255, 255, 0.3); ;
+}
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.8rem;
+  width: 100%;
+  max-width: 32rem;
+  position: absolute;
+  z-index: 99;
+}
+
+.black-box h2 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+}
+
+.black-box .btn-form {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #e8e8e8;
+  padding: 0.4rem 3rem;
+}
+
+.index-form .form-control {
+  font-family: 'Fira Sans', sans-serif;
+  color: #000;
+}
+@media (max-width: 992px) {
+.black-box{display: none;}
+}
+
+
+/* Reviews */
+.reviews {
+  padding: 4rem 0;
+}
+.reviews h2 {
+  margin: auto 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.reviews h2 {
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  letter-spacing: 0.5rem;
+}
+.reviews h2:before, .reviews h2:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+}
+.reviews h2:after {
+  margin: 0 -55% 0 .5em;
+}
+
+.line {
+  display: inline-block;
+  /*min-width: 15rem;*/
+  max-width: 15rem;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 1rem 0;
+}
+.appointment-icon {
+  background-color: #3B5998;
+  /*height: 18rem;*/
+  height: 19.15rem;
+  padding: 3rem;
+  text-align: center;
+
+}
+
+.appointment-icon h4 {
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.appointment-form {
+  background-color: #b4b4b4;
+  /*height: 18rem;*/
+  padding: 2.4rem;
+  margin-bottom: 2rem;
+}
+.appointment-form .izq{
+  width: 49%;
+  display: inline-block;
+  margin-right:1%;
+ }
+ .appointment-form .der{
+   width: 49%;
+   display: inline-block;
+  }
+.btn-appointment {
+  background-color: #202020;
+  width: 100%;
+  border-radius: 0;
+}
+.btn-appointment {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+}
+.btn-appointment:hover {color: #fff;}
+.quote-1 {
+/*width: 160px!important;
+height: 160px!important;*/
+border: 1rem solid #fff;
+padding: 10px;
+box-shadow: 0 0 0 4px #000;
+}
+
+
+/* carousel */
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 2rem;
+  margin-bottom: 5rem!important;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  /*width: 250px;*/
+  height: 20rem;
+}
+/* End carousel */
+
+
+/* Slider carousel *************************************  */
+#slide-carousel
+{
+  min-height: 473px;
+  top: -15px;
+}
+
+/* Control buttons  */
+#slide-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#slide-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#slide-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#slide-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#slide-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#slide-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#slide-carousel .item {
+  min-height: 473px;
+}
+/* End carousel  *************************************************** */
+
+
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+.reviews .item .mask {
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+  overflow: hidden;
+  margin: 3rem auto;
+}
+.reviews .item .mask img {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.reviews .item .calification {
+  color: #ffae00;
+  margin: 2rem auto;
+}
+.reviews .item .calification i.fa.fa-star:before {
+  color: #ffae00;
+}
+
+
+/*.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}*/
+.item blockquote p {
+  font-size: 1.8rem;
+  font-family: 'Montserrat',Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+.item blockquote small {
+font-family: 'Montserrat',Helvetica, Arial, sans-serif;
+}
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+/* About */
+.history-head {background-image: url(../img/hero/history.jpg);}
+
+
+.bio-about {
+ /* padding: 5rem 5rem;*/
+}
+.bio-about img {
+  max-width: 331px;
+  max-height: 341px;
+  margin: 2rem 0rem 2rem 2rem;
+}
+.bio-about p{
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  color: #4c4d4d;
+  text-align: justify;
+}
+.bio-sub {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  color: #4c4d4d;
+  text-align: justify;
+}
+
+.sub {
+  width: 100%!important;
+}
+.sub a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-family:'Montserrat',Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0.8rem 0;
+}
+.sub h4 {
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+.bio-about {padding: 1.5rem;}
+}
+/* Hero Common */
+.hero {
+position: relative;
+height: 37.1rem;
+background-size: cover;
+background-color: rgba(59, 89, 152, 0.6);
+background-repeat: no-repeat;
+background-position: center;
+background-blend-mode: color-burn ;
+-webkit-background-blend-mode: color-burn ;
+-moz-background-blend-mode: color-burn ;
+}
+.hero::before{
+content: "";
+display: block;
+position: absolute;
+/*border: 1px solid yellow;*/
+height: 100%;
+width: 100%;
+background-color: rgba(59, 89, 152, 0.8);
+}
+.hero h1 {
+  margin-top: 14.6rem;
+  margin-bottom: 14.6rem;
+  text-transform: uppercase;
+  font-size: 7rem;
+  color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jumbotron.hero {
+  padding: 0;
+}
+/* BREAST SURGERY */
+.breast-head {
+background-image: url(../img/hero/breast-hero.jpg);
+}
+
+.example {
+  display: block;
+  background-color: #ccc;
+  min-height: 30rem;
+  border:1px solid #999;
+}
+
+.breast-surgery-page p {
+  color: #4c4d4d;
+  font-size: 1.6rem;
+}
+.breast-surgery-page h2 {
+  font-weight: 700;
+  font-size: 3.7rem;
+}
+
+.breast-surgery-page h5 {
+  color: #3B5998;
+  font-size:1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Fira Sans', sans-serif;
+}
+.book-appointment {
+  margin-bottom: 4rem;
+}
+.top-40 {
+  margin-top: 4rem;
+}
+@media (max-width: 768px) {
+  .example {margin-top: 3rem;}
+  .row .col-md-4:first-child .example {
+    margin-top: 0;
+  }
+}
+/*
+@media (max-width: 991px) {
+    .example {margin-top: 3rem;}
+  .row .col-md-4:first-child .example {
+    margin-top: 0;
+
+}
+*/
+
+/* Face Lift */
+.lift-hero {background-image: url(../img/hero/lift-hero.jpg);}
+
+/* Facial Reconstruction */
+.facial-hero {background-image: url(../img/hero/facial-hero.jpg);}
+
+
+.facial-reconstruction-page p {
+  font-size: 1.6rem;
+}
+.facial-reconstruction-page h3 {
+  font-size: 3.7rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #3B5998;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.facial-hero-2 {
+  background-color: #363636;
+}
+.facial-hero-2 h2 {
+  color: #fff;
+
+}
+
+/* Rhinoplasty */
+.rhinoplasty-hero {background-image: url(../img/hero/rhinoplasty-hero.jpg);}
+
+/* Tummy tuck*/
+.tummy-hero {background-image: url(../img/hero/tummy-hero.jpg);}
+
+
+
+.tummy-bg {
+  background-image: url(../img/hero/tummy-bg.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  background-color: rgba(78, 30, 24, 0.6);
+  background-blend-mode: color-burn ;
+-webkit-background-blend-mode: color-burn ;
+-moz-background-blend-mode: color-burn ;
+}
+
+.tummy-bg {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 4rem 0;
+}
